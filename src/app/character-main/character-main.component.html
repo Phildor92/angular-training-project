@@ -1,0 +1,8 @@
+@if(characterList === undefined)
+  {
+    <app-loading></app-loading>
+  }
+  @else {
+    <app-character-list [characterList]="characterList" (rowClicked)="attack($event)"></app-character-list>
+  }
+  <app-character-form></app-character-form>
